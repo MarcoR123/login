@@ -7,6 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { InsertarComponent } from './insertar/insertar.component';
+import { EditarComponent } from './editar/editar.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { FilterPipe } from './pipes/filter.pipe';
 
@@ -15,6 +18,9 @@ import { FilterPipe } from './pipes/filter.pipe';
     AppComponent,
     LoginComponent,
     HomeComponent,
+    InsertarComponent,
+    EditarComponent,
+    BusquedaComponent,
     ConfirmationDialogComponent,
     FilterPipe
   ],
