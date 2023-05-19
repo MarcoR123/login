@@ -1,40 +1,36 @@
-.form-box {
-  max-width: 600px; /* Establece un ancho máximo de 600px */
-  margin: 0 auto; /* Centra la caja horizontalmente */
-  background-color: #f5f5f5; /* Cambia el color de fondo */
-  padding: 20px; /* Añade un poco de espacio entre el borde y los elementos internos */
-  border-radius: 5px; /* Agrega esquinas redondeadas a la caja */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+/* Estilo para el contenedor principal */
+.input-group {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-/* Estilos para los elementos internos */
-label {
-  display: block;
-  margin-bottom: 10px;
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-label {
   font-weight: bold;
 }
 
-input[type="number"],
-input[type="text"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.form-control {
+  margin-bottom: 1rem;
 }
 
-button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+.btn-primary {
+  margin-top: 1rem;
 }
 
-button[type="submit"]:hover {
-  background-color: #0069d9;
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
 }

@@ -25,7 +25,7 @@ export class EditarComponent {
   }
 
   guardarCambios(): void {
-    const url = `/api/ControladorAPI/CentroCostosEdit?codigoCentroCostos=${this.codigo}&descripcionCentroCostos=${this.nombreCentroCostos}`;
+    const url = `/api/Api/CentroCostosEdit?codigoCentroCostos=${this.codigo}&descripcionCentroCostos=${this.nombreCentroCostos}`;
     
     const body = { codigoCentroCostos: this.codigo, descripcionCentroCostos: this.nombreCentroCostos };
     this.http.get(url).subscribe(

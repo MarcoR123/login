@@ -56,11 +56,11 @@ export class HomeComponent implements OnInit {
 
   eliminarCentroCostos(codigo: number, descripcion: string) {
     const params = new HttpParams()
-        .set('codigocentrocostos', codigo.toString())
-        .set('descripcioncentrocostos', descripcion);
+        .set('codigoCentroCostos', codigo.toString())
+        .set('descripcionCentroCostos', descripcion);
 
     if (confirm('¿Está seguro que desea eliminar el centro de costos?')) {
-      this.http.get('/api/Api/api/centrocostos/delete', { params }).subscribe(result => {
+      this.http.get('api/Api/api/centrocostos/delete?', { params }).subscribe(result => {
         console.log(result);
         alert('Elimando');
       }, error => {
@@ -70,8 +70,13 @@ export class HomeComponent implements OnInit {
     }
   }
 
+
   buscarCentroCostos(){
     this.router.navigate(['/busqueda']);
+  }
+
+  mostrarPlanilla(){
+    this.router.navigate(['/movimiento-planilla']);
   }
 
 

@@ -12,6 +12,9 @@ import { EditarComponent } from './editar/editar.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { MovimientoPlanillaComponent } from './movimiento-planilla/movimiento-planilla.component';
+import { InsertarPlanillaComponent } from './insertarPlanilla/insertarPlanilla.component';
+import { EditarPlanillaComponent } from './editarPlanilla/editarPlanilla.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,11 @@ import { FilterPipe } from './pipes/filter.pipe';
     EditarComponent,
     BusquedaComponent,
     ConfirmationDialogComponent,
-    FilterPipe
+    FilterPipe,
+    MovimientoPlanillaComponent,
+    InsertarPlanillaComponent,
+    EditarPlanillaComponent
+
   ],
   imports: [
     BrowserModule,

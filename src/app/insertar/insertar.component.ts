@@ -27,7 +27,7 @@ export class InsertarComponent {
 
 
   onSubmit() {
-    const url = `api/ControladorAPI/CentroCostosInsert?codigoCentroCostos=${this.codigo}&descripcionCentroCostos=${this.descripcion}`;
+    const url = `api/Api/CentroCostosInsert?codigoCentroCostos=${this.codigo}&descripcionCentroCostos=${this.descripcion}`;
     
     const body = { codigoCentroCostos: this.codigo, descripcionCentroCostos: this.descripcion };
     this.http.get(url).subscribe(

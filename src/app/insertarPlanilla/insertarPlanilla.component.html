@@ -1,0 +1,74 @@
+<div class="form-box">
+
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="mb-3">
+      <label for="Concepto" class="form-label">Conceptos:</label>
+      <input type="text" name="Concepto" [(ngModel)]="Concepto" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Prioridad" class="form-label">Prioridad:</label>
+      <input type="number" name="Prioridad" [(ngModel)]="Prioridad" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="TipoOperacion" class="form-label">Tipo de Operacion:</label>
+      <input type="text" name="TipoOperacion" [(ngModel)]="TipoOperacion" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Cuenta1" class="form-label">Cuenta 1:</label>
+      <input type="text" name="Cuenta1" [(ngModel)]="Cuenta1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Cuenta2" class="form-label">Cuenta 2:</label>
+      <input type="text" name="Cuenta2" [(ngModel)]="Cuenta2" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Cuenta3" class="form-label">Cuenta 3:</label>
+      <input type="text" name="Cuenta3" [(ngModel)]="Cuenta3" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Cuenta4" class="form-label">Cuenta 4:</label>
+      <input type="text" name="Cuenta4" [(ngModel)]="Cuenta4" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="MovimientoExcepcion1" class="form-label">Movimiento Excepcion 1:</label>
+      <input type="text" name="MovimientoExcepcion1" [(ngModel)]="MovimientoExcepcion1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="MovimientoExcepcion2" class="form-label">Movimiento Excepcion 2:</label>
+      <input type="text" name="MovimientoExcepcion2" [(ngModel)]="MovimientoExcepcion2" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="MovimientoExcepcion3" class="form-label">Movimiento Excepcion 3:</label>
+      <input type="text" name="MovimientoExcepcion3" [(ngModel)]="MovimientoExcepcion3" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Aplica_iess" class="form-label">Aplica IESS:</label>
+      <input type="text" name="Aplica_iess" [(ngModel)]="Aplica_iess" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="Aplica_imp_renta" class="form-label">Aplica Impuesto Renta:</label>
+      <input type="text" name="Aplica_imp_renta" [(ngModel)]="Aplica_imp_renta" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="empresa_Afecta_Iess" class="form-label">Empresa Afecta IESS:</label>
+      <input type="text" name="empresa_Afecta_Iess" [(ngModel)]="empresa_Afecta_Iess" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Añadir nuevo Movimiento</button>
+  </form>
+
+
+</div>
