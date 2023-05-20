@@ -15,6 +15,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { MovimientoPlanillaComponent } from './movimiento-planilla/movimiento-planilla.component';
 import { InsertarPlanillaComponent } from './insertarPlanilla/insertarPlanilla.component';
 import { EditarPlanillaComponent } from './editarPlanilla/editarPlanilla.component';
+import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EditarPlanillaComponent } from './editarPlanilla/editarPlanilla.compone
     FilterPipe,
     MovimientoPlanillaComponent,
     InsertarPlanillaComponent,
-    EditarPlanillaComponent
+    EditarPlanillaComponent,
+    TrabajadoresComponent
 
   ],
   imports: [

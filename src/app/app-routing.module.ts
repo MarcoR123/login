@@ -8,6 +8,7 @@ import { EditarComponent } from './editar/editar.component';
 import { MovimientoPlanillaComponent } from './movimiento-planilla/movimiento-planilla.component';
 import { InsertarPlanillaComponent } from './insertarPlanilla/insertarPlanilla.component';
 import { EditarPlanillaComponent } from './editarPlanilla/editarPlanilla.component';
+import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
 
 const routes: Routes = [{ path: '', component: LoginComponent },
 { path: 'home', component: HomeComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [{ path: '', component: LoginComponent },
 { path: 'movimientoPlanilla', component: MovimientoPlanillaComponent },
 { path: 'insertarPlanilla', component: InsertarPlanillaComponent },
 { path: 'editarPlanilla', component: EditarPlanillaComponent },
-{ path: 'movimientoPlanilla/editar/:id', component: EditarPlanillaComponent }
+{ path: 'movimientoPlanilla/editar/:id', component: EditarPlanillaComponent },
+{ path: 'trabajadores', component: TrabajadoresComponent }
 ];
 
 @NgModule({

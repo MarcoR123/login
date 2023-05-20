@@ -1,0 +1,126 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg bg-primary">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="/home"></a>
+     
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Cerrar Sesión</a>
+        </li>
+        
+      </ul>
+      <div class="ms-auto text-dark">
+        <div class="navbar-text me-3">
+        </div>
+      </div>
+    </div>
+   </div>
+ </nav>
+<br>
+
+  
+
+<div class="table-container"> 
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>COMP_Codigo</th>
+        <th>Tipo_trabajador</th>
+        <th>Apellido_Paterno</th>
+        <th>Apellido_Materno</th>
+        <th>Nombres</th>
+        <th>Identificacion</th>
+        <th>Entidad_Bancaria</th>
+        <th>CarnetIESS</th>
+        <th>Direccion</th>
+        <th>Telefono_Fijo</th>
+        <th>Telefono_Movil</th>
+        <th>Genero</th>
+        <th>Nro_Cuenta_Bancaria</th>
+        <th>Codigo_Categoria_Ocupacion</th> 
+        <th>Ocupacion</th> 
+        <th>Centro_Costos</th> 
+        <th>Nivel_Salarial</th> 
+        <th>EstadoTrabajador</th> 
+        <th>Tipo_Contrato</th> 
+        <th>Tipo_Cese</th> 
+        <th>EstadoCivil</th> 
+        <th>TipodeComision</th> 
+        <th>FechaNacimiento</th> 
+        <th>FechaIngreso</th> 
+        <th>FechaCese</th> 
+        <th>PeriododeVacaciones</th> 
+        <th>FechaReingreso</th> 
+        <th>Fecha_Ult_Actualizacion</th> 
+        <th>EsReingreso</th> 
+        <th>BancoCTA_CTE</th> 
+        <th>Tipo_Cuenta</th> 
+        <th>RSV_Indem_Acumul</th> 
+        <th>Año_Ult_Rsva_Indemni</th> 
+        <th>Mes_Ult_Rsva_Indemni</th> 
+        <th>FormaCalculo13ro</th> 
+        <th>FormaCalculo14ro</th> 
+        <th>BoniComplementaria</th> 
+        <th>BoniEspecial</th> 
+        <th>Remuneracion_Minima</th> 
+        <th>CuotaCuentaCorriente</th> 
+        <th>Fondo_Reserva</th> 
+        <th>Mensaje</th> 
+        <th>Acciones</th> <!-- Nueva columna para los botones -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of trabajadores">
+        <td>{{ data.COMP_Codigo }}</td>
+        <td>{{ data.Tipo_trabajador }}</td>
+        <td>{{ data.Apellido_Paterno }}</td>
+        <td>{{ data.Apellido_Materno }}</td>
+        <td>{{ data.Nombres }}</td>
+        <td>{{ data.Identificacion }}</td>
+        <td>{{ data.Entidad_Bancaria }}</td>
+        <td>{{ data.CarnetIESS }}</td>
+        <td>{{ data.Direccion }}</td>
+        <td>{{ data.Telefono_Fijo }}</td>
+        <td>{{ data.Telefono_Movil }}</td>
+        <td>{{ data.Genero }}</td>
+        <td>{{ data.Nro_Cuenta_Bancaria }}</td>
+        <td>{{ data.Codigo_Categoria_Ocupacion }}</td>
+        <td>{{ data.Ocupacion }}</td>
+        <td>{{ data.Centro_Costos }}</td>
+        <td>{{ data.Nivel_Salarial }}</td>
+        <td>{{ data.EstadoTrabajador }}</td>
+        <td>{{ data.Tipo_Contrato }}</td>
+        <td>{{ data.Tipo_Cese }}</td>
+        <td>{{ data.EstadoCivil }}</td>
+        <td>{{ data.TipodeComision }}</td>
+        <td>{{ data.FechaNacimiento }}</td>
+        <td>{{ data.FechaIngreso }}</td>
+        <td>{{ data.FechaCese }}</td>
+        <td>{{ data.PeriododeVacaciones }}</td>
+        <td>{{ data.FechaReingreso }}</td>
+        <td>{{ data.Fecha_Ult_Actualizacion }}</td>
+        <td>{{ data.EsReingreso }}</td>
+        <td>{{ data.BancoCTA_CTE }}</td>
+        <td>{{ data.Tipo_Cuenta }}</td>
+        <td>{{ data.RSV_Indem_Acumul }}</td>
+        <td>{{ data.Ano_Ult_Rsva_Indemni}}</td>
+        <td>{{ data.Mes_Ult_Rsva_Indemni}}</td>
+        <td>{{ data.FormaCalculo13ro}}</td>
+        <td>{{ data.FormaCalculo14ro}}</td>
+        <td>{{ data.BoniComplementaria}}</td>
+        <td>{{ data.BoniEspecial}}</td>
+        <td>{{ data.Remuneracion_Minima}}</td>
+        <td>{{ data.CuotaCuentaCorriente}}</td>
+        <td>{{ data.Fondo_Reserva}}</td>
+        <td>{{ data.Mensaje}}</td>
+        <td>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
